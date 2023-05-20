@@ -11,7 +11,7 @@ import IntroPage from "./pages/IntroPage";
 import QuestionsPage from "./pages/QuestionsPage";
 import reportWebVitals from "./reportWebVitals";
 
-const router = createHashRouterRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,

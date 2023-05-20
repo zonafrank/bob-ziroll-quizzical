@@ -1,13 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  createHashRouter,
+  RouterProvider
+} from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import IntroPage from "./pages/IntroPage";
 import QuestionsPage from "./pages/QuestionsPage";
 import reportWebVitals from "./reportWebVitals";
 
-const router = createBrowserRouter([
+const router = createHashRouterRouter([
   {
     path: "/",
     element: <App />,

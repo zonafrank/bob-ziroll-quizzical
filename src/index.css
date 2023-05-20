@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
@@ -141,5 +142,17 @@ body {
 
   .container {
     padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .questions-page-btns,
+  #select-category-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #header {
+    padding: 1rem 0;
   }
 }

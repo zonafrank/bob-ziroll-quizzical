@@ -10,7 +10,7 @@ const IntroPage = () => {
   }
 
   return (
-    <div className="container">
+    <>
       <div className="top-image">
         <img src={topImage} alt="top right design" />
       </div>
@@ -22,7 +22,7 @@ const IntroPage = () => {
       <div className="bottom-image">
         <img src={bottomImage} alt="bottom left design" />
       </div>
-    </div>
+    </>
   );
 };
 

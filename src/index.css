@@ -42,6 +42,7 @@ body {
   height: 52px;
   border-radius: 15px;
   cursor: pointer;
+  border: none;
 }
 
 .top-image {
@@ -54,6 +55,11 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+#header ~ .bottom-image {
+  left: -50px;
+  bottom: -50px;
 }
 
 .options {

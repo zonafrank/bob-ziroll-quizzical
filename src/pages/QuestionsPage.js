@@ -3,6 +3,8 @@ import Question from "../components/Question";
 import Header from "../components/Header";
 import { shuffleArray, getCategories } from "../utils";
 import { v4 } from "uuid";
+import topImage from "../images/image-top-right.png";
+import bottomImage from "../images/image-bottom-left.png";
 
 const QuestionsPage = () => {
   const [questions, setQuestions] = useState([]);
@@ -137,11 +139,15 @@ const QuestionsPage = () => {
   if (!questions.length) return null;
 
   return (
-    <div className="container">
+    <>
+      <div className="top-image">
+        <img src={topImage} alt="top right design" />
+      </div>
       <Header
         categories={categories}
         handleSelectCategoryChange={handleSelectCategoryChange}
         playStarted={playStarted}
+        id="header"
       />
       <main>
         <div className="questions">
@@ -172,7 +178,10 @@ const QuestionsPage = () => {
           )}
         </div>
       </main>
-    </div>
+      <div className="bottom-image">
+        <img src={bottomImage} alt="bottom left design" />
+      </div>
+    </>
   );
 };
 

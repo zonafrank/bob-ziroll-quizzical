@@ -132,3 +132,14 @@ body {
   padding: 0.5rem;
   flex: 1;
 }
+
+@media screen and (max-width: 650px) {
+  .bottom-image,
+  .top-image {
+    display: none;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+}

@@ -143,6 +143,20 @@ body {
   .container {
     padding: 0 1rem;
   }
+
+  .options {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .options > .option:nth-child(1) {
+    margin-top: 1rem;
+  }
+
+  .option {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 @media screen and (max-width: 370px) {
@@ -154,5 +168,10 @@ body {
 
   #header {
     padding: 1rem 0;
+    align-self: stretch;
+  }
+
+  #select-category {
+    width: 100%;
   }
 }

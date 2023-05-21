@@ -143,23 +143,9 @@ body {
   .container {
     padding: 0 1rem;
   }
-
-  .options {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .options > .option:nth-child(1) {
-    margin-top: 1rem;
-  }
-
-  .option {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 410px) {
   .questions-page-btns,
   #select-category-wrapper {
     flex-direction: column;
@@ -173,5 +159,19 @@ body {
 
   #select-category {
     width: 100%;
+  }
+
+  .options {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .options > .option:nth-child(1) {
+    margin-top: 1rem;
+  }
+
+  .option {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }
